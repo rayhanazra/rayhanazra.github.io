@@ -1,0 +1,361 @@
+/* Body */
+
+body{
+background-image: url(Foto/45.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+#Body
+{
+    width: 1000px;
+    margin: auto;
+    height: 1000px;
+}
+/* header */
+#header
+{
+    background-image: url(Foto/44.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    text-align: center;
+    color: blue;
+    padding: 0px;
+    font-size: 45px;
+}
+#header img
+{
+    width: 150px;
+    height: 150px;
+}
+/* menu primer */
+#menu
+{
+    overflow: hidden;
+    background-color: black;
+}
+#menu a
+{
+    float: left;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#menu a:hover
+{
+    background-color:rgb(112, 112, 112);
+    color: black;
+}
+/* sidebar */
+#sidebar
+{ 
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(112, 112, 112);
+    overflow-x: hidden;
+    padding-top: 20px;
+    border: rgb(26, 25, 25)1px solid;
+}
+#sidebar a
+{
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color:white;
+    display: block;
+}
+#sidebar a:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#sidebar p
+{
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+/* content */
+#content
+{
+    color: blue;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
+    overflow-x: hidden;
+    padding-top: 0px;
+    padding-bottom: 75px;
+    display: block;
+}
+/* header content */
+#content h1
+{
+    font-size: 60px;
+    text-align: center;
+}
+#content h1 img
+{
+    width: 300px;
+}
+#content h2
+{
+    margin-left: 40px;
+}
+#content img
+{
+    margin-left: 50px;
+    width: 25%;
+}
+#content h3
+{
+    margin-left: 50px;
+    color: blue;
+    font-size: 17pt;
+}
+#content marquee
+{
+    background-color: black;
+    font-size: 50px;
+    color: white;
+}
+#content p
+{
+    margin-left: 50px;
+    color: white;
+}
+/* slideshow */
+#slideshow
+{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+#slideshow img
+{
+    height: 500px;
+}
+#prev, #next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+#next 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+#prev
+{
+    left: 10%;
+}
+#prev:hover
+{
+    background-color: rgba(0,0,0,0.8)
+}
+#next:hover
+{
+    background-color: rgba(0,0,0,0.8)
+}
+/* caption text */
+#text
+{
+    color: white;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+#number
+{
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+  .active, .dot:hover
+{
+    background-color: white;
+}
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+  @-webkit-keyframes fade 
+  {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade 
+  {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @media only screen and (max-width: 300px) 
+  {
+    #prev, #next,.text {font-size: 11px}
+  }
+  
+/* kotak dalam content 1*/
+#partcontent1
+{
+    height: 500px;
+    width: 40%;
+    background-image: url(images/table1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 75px;
+    float: left;
+    overflow: auto;
+}
+#partcontent1 h1
+{
+    background-color: rgba(128, 128, 128, 0.4);
+    margin-top: 20px;
+}
+#partcontent1 p
+{
+    font-size: 35px;
+    color: white;
+    text-align: left;
+}
+/* kotak dalam content 2*/
+#partcontent2
+{
+    height: 500px;
+    width: 40%;
+    background-image: url(images/table2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 75px;
+    float: left;
+    overflow: auto;
+}
+#partcontent2 h1
+{
+    background-color: rgba(128, 128, 128, 0.4);
+    margin-top: 20px;
+}
+#partcontent2 p
+{
+    font-size: 35px;
+    color: white;
+    text-align: left;
+}
+/* kotak dalam content 3*/
+#partcontent3
+{
+    height: 500px;
+    width: 40%;
+    background-image: url(images/table3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 75px;
+    float: left;
+    overflow: auto;
+}
+#partcontent3 h1
+{
+    background-color: rgba(128, 128, 128, 0.4);
+    margin-top: 20px;
+}
+#partcontent3 p
+{
+    font-size: 35px;
+    color: white;
+    text-align: left;
+}
+/* kotak dalam content 4*/
+#partcontent4
+{
+    height: 500px;
+    width: 40%;
+    background-image: url(images/table4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 75px;
+    float: left;
+    overflow: auto;
+}
+#partcontent4 h1
+{
+    background-color: rgba(128, 128, 128, 0.4);
+    margin-top: 20px;
+}
+#partcontent4 p
+{
+    font-size: 35px;
+    color: white;
+    text-align: left;
+}
+/* footer */
+#footer
+{
+    margin-left: 142px;
+    height: 150px;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 0px;
+    color: white;
+
+}
+#footer img
+{
+    width: 1.5em;
+    height: 1.5em;
+}
+/* lain-lain */
+a
+{
+    color: white;
+    text-decoration: none;
+}
+a:hover
+{
+    background-color: grey;
+}
